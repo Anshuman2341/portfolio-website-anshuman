@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Michroma&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            background-color: rgb(21, 21, 84);
+            color: white;
+            font-family: "Poppins", sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(127, 8, 237);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0px 20px;
+            text-decoration: underline;
+            color: white;
+            font-size: 1.2rem;
+        }
+
+        .left {
+            font-size: 1.52rem;
+        }
+
+        .first {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 20px 0px;
+        }
+
+        .first>div {
+            width: 50%;
+            /* margin: 0px 20px; */
+        }
+
+        .leftsection {
+            font-size: 2rem;
+            margin: 70px;
+            padding: 0px 20px;
+
+        }
+
+        .leftsection .btn {
+            background-color: #912cee;
+            height: 39px;
+            width: 134px;
+            border-radius: 30px;
+            color: white;
+            font-size: 14px;
+            border: 3px solid white;
+            margin: 0px 9px;
+            cursor: pointer;
+        }
+
+        .leftsection .button {
+            margin-top: 40px;
+        }
+
+        .rightsection img {
+            width: 80%;
+            margin: 20px 0px;
+        }
+
+        .purple {
+            color: rgb(127, 8, 237);
+        }
+
+        #element {
+            color: rgb(127, 8, 237);
+        }
+
+        hr {
+            border: 0px;
+            background-color: rgb(95, 95, 213);
+            height: 1px;
+            margin: 10px 40px;
+        }
+
+
+        footer {
+            height: 30vh;
+            background-color: rgb(127, 8, 237);
+        }
+
+        .footer {
+            display: flex;
+            padding: 2rem;
+            justify-content: space-between;
+        }
+
+        footer .footer-profile-link {
+            text-align: center;
+        }
+
+        footer .footer-profile-link a {
+            color: white;
+            font-size: 1.1rem;
+        }
+
+        footer .second-footer ul a {
+            color: white;
+            font-size: 1.1rem;
+        }
+
+        footer .third-footer ul a {
+            color: white;
+            font-size: 1.1rem;
+        }
+
+        .second {
+            height: 70vh;
+            /* background-color: rgb(127, 8, 237); */
+        }
+
+        .second .leftsection-2 {
+            display: flex;
+            flex-direction: column;
+            /* Stack items vertically */
+            padding: 2rem;
+            justify-content: space-between;
+            gap: 20px;
+            /* Adds spacing between elements */
+        }
+
+        .eduction {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .work-experince {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .second {
+            height: auto;
+            background-color: #2b2b7c;
+            padding: 40px 60px;
+            border-radius: 10px;
+            margin: 20px;
+        }
+
+        .second .leftsection-2 {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            color: white;
+        }
+
+        .second h1 {
+            font-size: 1.8rem;
+            color: #912cee;
+            margin-bottom: 10px;
+        }
+
+        .work-experince,
+        .eduction,
+        .skiils {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .work-experince,
+        .eduction {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .skiils ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .btn:hover {
+            background-color: white;
+            color: #912cee;
+            transition: 0.3s;
+        }
+
+        nav ul li:hover {
+            color: #d4a1ff;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                height: auto;
+                padding: 10px;
+            }
+
+            .first {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .leftsection,
+            .rightsection {
+                width: 100%;
+            }
+
+            .button {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+
+        .skiils li {
+            background: #912cee;
+            padding: 8px 15px;
+            border-radius: 5px;
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Anshuman Singh Sisodia</div>
+            <div class="right">
+                <ul>
+                    <a href="/">
+                        <li>Home</li>
+                    </a>
+                    <a href="/">
+                        <li>About</li>
+                    </a>
+                    <a href="/">
+                        <li>Services</li>
+                    </a>
+                    <a href="/">
+                        <li>Projects</li>
+                    </a>
+                    <a href="/">
+                        <li>Contact Info</li>
+                    </a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="first">
+
+            <div class="leftsection">
+                <p>Hi My name is <span class="purple">Anshuman</span></p>
+                <div>
+                    I Am a passionate web developer
+                </div>
+                <span id="element"></span>
+                <div class="button">
+                    <a href="assets\Anshuman_Front_end_resume.pdf">
+                        <button class="btn">Download Resume</button>
+                    </a>
+                    <a href="https://github.com/Anshuman2341?tab=repositories">
+                        <button class="btn">Visit GitHub</button>
+                    </a>
+
+                    <a href="mailto:anshuman2341@gmail.com">
+                        <button class="btn">Email</button>
+                    </a>
+                </div>
+            </div>
+            <div class="rightsection">
+                <img src="assets\work-home-character-composition.png" alt="web-dev-image">
+            </div>
+
+        </section>
+        <hr>
+        <section class="second">
+            <div class="leftsection-2">
+                <div class="work-experince">
+
+                    <div class="left-ex">
+                        <h1>Work-Experince</h1>
+                        <h5>Seo-Intern <span>Sportskeeda</span></h5>
+                    </div>
+                    <div class="right-ex">
+                        <h5>05/2023-08/2023</h5>
+                        <h5>Bangalore,india</h5>
+                    </div>
+                </div>
+                <div class="eduction">
+                    <div class="left-ed">
+                        <h1>Education</h1>
+                        <p>Bachelor of Technology</p>
+                        <p>Madhav Institute of Technology and Science</p>
+                    </div>
+                    <div class="right-ed">
+                        CGPA-7.0
+                    </div>
+                </div>
+                <div class="skiils">
+                    <h1>Skills</h1>
+                    <ul>
+                        <li>HTML, CSS, JavaScript</li>
+                        <li>Python, Java, SQL</li>
+                        <li>WordPress, SEO</li>
+                        <li>Git, GitHub</li>
+                        <li>Data Structures, Algorithms</li>
+                        <li>GSAP, Microsoft Tools</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer">
+                <div class="first-footer">
+                    <h1>© 2025 | Anshuman Singh - Web Developer</h1>
+                </div>
+                <div class="second-footer">
+                    <ul>
+                        <a href="/">
+                            <li>Home</li>
+                        </a>
+                        <a href="/">
+                            <li>About</li>
+                        </a>
+                        <a href="/">
+                            <li>Services</li>
+                        </a>
+                        <a href="/">
+                            <li>Projects</li>
+                        </a>
+                        <a href="/">
+                            <li>Contact Info</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="third-footer">
+                    <ul>
+                        <a href="/">
+                            <li>GitHub</li>
+                        </a>
+                        <a href="https://www.linkedin.com/in/anshuman-singh-sisodia-7b650b277">
+                            <li>Linkdin</li>
+                        </a>
+                        <a href="/">
+                            <li>Instagram</li>
+                        </a>
+                        <a href="/">
+                            <li>Facebook</li>
+                        </a>
+                        <a href="mailto:anshuman2341@gmail.com">
+                            <li>Email</li>
+                        </a>
+                    </ul>
+                </div>
+
+                <div class="fourth-footer"></div>
+            </div>
+            <div class="footer-profile-link">
+                <a href="https://github.com/Anshuman2341?tab=repositories">https://github.com/Anshuman2341?tab=repositories
+                    | All Rights Reserved</a>
+            </div>
+        </footer>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['<b>,Front End Developer</b>', '&amp; a Tech Enthusiast.'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
